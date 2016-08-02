@@ -6,6 +6,7 @@
 
 # Ignore bundler config.
 /.bundle
+/.idea
 
 # Ignore the default SQLite database.
 /db/*.sqlite3
@@ -15,3 +16,13 @@
 /log/*
 !/log/.keep
 /tmp
+
+# Ignore some MAC files
+
+/**/.DS_Store
+
+# Ignore environment variables
+config/settings.local.yml
+config/settings/*.local.yml
+config/environments/*.local.yml
+/config/settings/alfa.local.yml
