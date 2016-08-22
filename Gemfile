@@ -36,6 +36,7 @@ group :development, :test do
   gem 'rspec-mocks'
   gem 'rubocop'
   gem 'pry'
+  gem 'pry-byebug'
   gem 'ffi'
   gem 'rb-fsevent'
 end
