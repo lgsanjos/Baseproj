@@ -1,28 +1,17 @@
-== README
+== Base Rails Project
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a set of my most used gems mostly setup for any new rails project
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+* Rails 4.2.6
+* rails-i18n
+* devise and devise-i18n
+* loadash
+* bootstrap-rails
+* slim-rails
+* pg
+* rspec, factory girl, ffaker and db_cleaner
+* guard
+* rubocop
+* pry-bye-bug
+* quiet assets
+* capistrano
