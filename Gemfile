@@ -27,6 +27,13 @@ group :production do
   gem 'pg', '0.18.4'
 end
 
+group :test do
+  gem 'database_cleaner'
+  gem 'factory_girl'
+  gem 'timecop'
+  gem 'ffaker'
+end
+
 group :development, :test do
   gem 'sqlite3'
   gem 'guard-rails'
@@ -34,6 +41,7 @@ group :development, :test do
   gem 'guard-livereload', '~> 2.5', require: false
   gem 'byebug'
   gem 'rspec'
+  gem 'rspec-rails'
   gem 'rspec-mocks'
   gem 'rubocop'
   gem 'pry'
