@@ -15,4 +15,6 @@
 //= require twitter/bootstrap
 //= require jquery.peity
 //= require metismenu
+//= require zepto
+//= require 'icheck'
 //= require_tree .

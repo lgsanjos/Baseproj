@@ -1,0 +1,39 @@
+.col-lg-12
+  .hpanel
+    .panel-heading
+      .panel-tools
+        a.showhide
+          i.fa.fa-chevron-up
+        a.closebox
+          i.fa.fa-times
+      | Dashboard information and statistics
+    .panel-body
+      .row
+        .col-md-3.text-center
+          .small
+            i.fa.fa-bolt
+            | Page views
+          div
+            h1.font-extra-bold.m-t-xl.m-b-xs
+              | 226,802
+            small Page views in last month
+          .small.m-t-xl
+            i.fa.fa-clock-o
+            | Data from January
+        .col-md-6
+          .text-center.small
+            i.fa.fa-laptop
+            | Active users in current month (December)
+          .flot-chart style=("height: 160px")
+            = render partial: 'chart'
+        .col-md-3.text-center
+          .small
+            i.fa.fa-clock-o
+            | Active duration
+          div
+            h1.font-extra-bold.m-t-xl.m-b-xs
+              | 10 Months
+            small And four weeks
+          .small.m-t-xl
+            i.fa.fa-clock-o
+            | Last active in 12.10.2015

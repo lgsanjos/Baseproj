@@ -15,6 +15,9 @@ gem 'jquery-rails'
 gem 'lodash-rails' # Equivalent to underscore lib
 gem 'metismenu-rails', github: 'lanvige/metismenu-rails'
 gem 'jquery-peity-rails'
+gem 'zepto-for-rails'
+gem 'icheck-rails'
+gem 'inline_svg'
 
 # CSS
 gem 'sass-rails', '~> 5.0'
