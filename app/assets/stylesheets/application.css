@@ -13,6 +13,7 @@
  *= require font-awesome
  *= require animate
  *= require bootstrap_and_overrides
+ *= require metismenu
  *= require_tree .
  *= require_self
  */

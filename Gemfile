@@ -13,19 +13,21 @@ gem 'devise-i18n'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'lodash-rails' # Equivalent to underscore lib
+gem 'metismenu-rails', github: 'lanvige/metismenu-rails'
+gem 'jquery-peity-rails'
 
 # CSS
 gem 'sass-rails', '~> 5.0'
-gem "font-awesome-rails"
-gem "animate-rails"
-gem "twitter-bootstrap-rails"
+gem 'font-awesome-rails'
+gem 'animate-rails'
+gem 'twitter-bootstrap-rails'
 
 # Html
-gem "slim-rails"
+gem 'slim-rails'
 
 # Needed to deploy on aws
-gem "therubyracer"
-gem "execjs"
+gem 'therubyracer'
+gem 'execjs'
 
 group :production do
   gem 'pg', '0.18.4'

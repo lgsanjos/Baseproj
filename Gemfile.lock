@@ -1,3 +1,9 @@
+GIT
+  remote: git://github.com/lanvige/metismenu-rails.git
+  revision: 9a24de213398f54b372c1cf506af3cd8ebbf3069
+  specs:
+    metismenu-rails (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -127,6 +133,7 @@ GEM
     jbuilder (2.6.0)
       activesupport (>= 3.0.0, < 5.1)
       multi_json (~> 1.2)
+    jquery-peity-rails (3.2.0)
     jquery-rails (4.1.1)
       rails-dom-testing (>= 1, < 3)
       railties (>= 4.2.0)
@@ -333,8 +340,10 @@ DEPENDENCIES
   guard-rails
   guard-rspec
   jbuilder (~> 2.0)
+  jquery-peity-rails
   jquery-rails
   lodash-rails
+  metismenu-rails!
   pg (= 0.18.4)
   pry
   pry-byebug
