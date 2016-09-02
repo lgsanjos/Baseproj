@@ -38,6 +38,8 @@ GEM
       tzinfo (~> 1.1)
     airbrussh (1.1.0)
       sshkit (>= 1.6.1, != 1.7.0)
+    animate-rails (1.0.10)
+      rails
     arel (6.0.3)
     ast (2.3.0)
     bcrypt (3.1.11)
@@ -93,6 +95,8 @@ GEM
       activesupport (>= 3.0.0)
     ffaker (2.2.0)
     ffi (1.9.14)
+    font-awesome-rails (4.6.3.1)
+      railties (>= 3.2, < 5.1)
     formatador (0.2.5)
     globalid (0.3.7)
       activesupport (>= 4.1.0)
@@ -309,6 +313,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  animate-rails
   byebug
   capistrano
   capistrano-bundler
@@ -323,6 +328,7 @@ DEPENDENCIES
   factory_girl
   ffaker
   ffi
+  font-awesome-rails
   guard-livereload (~> 2.5)
   guard-rails
   guard-rspec

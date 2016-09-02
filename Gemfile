@@ -16,6 +16,8 @@ gem 'lodash-rails' # Equivalent to underscore lib
 
 # CSS
 gem 'sass-rails', '~> 5.0'
+gem "font-awesome-rails"
+gem "animate-rails"
 gem "twitter-bootstrap-rails"
 
 # Html
