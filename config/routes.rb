@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
+  get '/portfolios', controller: 'portfolios', action: 'index'
+
   root 'dashboard#index'
 
   # Example of regular route:

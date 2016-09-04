@@ -1,0 +1,15 @@
+.col-lg-12
+  .hpanel
+    .panel-heading
+      .panel-tools
+        a.showhide
+          i.fa.fa-chevron-up
+        a.closebox
+          i.fa.fa-times
+      | Resumo: #{portfolio_name}
+    .panel-body
+      .row
+        .col-md-5
+          = render partial: 'portfolios/summary/data', locals: { portfolio_name: portfolio_name }
+        .col-md-6
+          = render partial: 'portfolios/summary/chart'
