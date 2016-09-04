@@ -17,4 +17,5 @@
 //= require metismenu
 //= require zepto
 //= require 'icheck'
+//= require jquery.sparkline
 //= require_tree .

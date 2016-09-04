@@ -1,0 +1,31 @@
+.col-lg-3
+  .hpanel.stats
+    .panel-body
+      h5.text-center.text-success
+        i.fa.fa-arrow-up
+        span.p-xs #{index_name}
+      .clearfix
+      .m-t-xs
+        .row
+          .col-xs-6
+            small.stat-label Cotação
+          .col-xs-6
+            h4 $1.170,20
+        .row
+          .col-xs-12
+            .inline-graph
+javascript:
+  $('.inline-graph').sparkline([3.2521, 3.2482, 3.2281, 3.2393, 3.2315, 3.2713, 3.2305, 3.2222], {
+     defaultPixelsPerValue: 15,
+     fillColor: '#d8feaa',
+     lineColor: '#62cb31',
+     lineWidth: 2,
+     width: 190,
+     height: 30,
+     tooltipFormatter: function (spark, options, fields) {
+       let label = options.get('xvaluesLabel', [])[fields.x]
+       return '<span>R$ '+ fields.y +' - '+ label + '</span>'
+     },
+     xvaluesLabel: ['22/08', '21/08', '20/08', '19/08', '18/08', '17/08', '16/08', '15/08', '14/08'],
+     xvalues: [1,2,3,4,5,6,7,8]
+  })

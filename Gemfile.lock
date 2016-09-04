@@ -1,4 +1,12 @@
 GIT
+  remote: git://github.com/cubus/jquery-sparkline-rails.git
+  revision: c5b531f51e3e734710c7561b06c2c829107f9b38
+  specs:
+    jquery-sparkline-rails (2.1.1)
+      jquery-rails
+      rails (>= 3.2.2)
+
+GIT
   remote: git://github.com/lanvige/metismenu-rails.git
   revision: 9a24de213398f54b372c1cf506af3cd8ebbf3069
   specs:
@@ -354,6 +362,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-peity-rails
   jquery-rails
+  jquery-sparkline-rails!
   lodash-rails
   metismenu-rails!
   pg (= 0.18.4)

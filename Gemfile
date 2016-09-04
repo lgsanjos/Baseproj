@@ -13,10 +13,14 @@ gem 'devise-i18n'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'lodash-rails' # Equivalent to underscore lib
+# Header Dropdown animation
 gem 'metismenu-rails', github: 'lanvige/metismenu-rails'
+# Menu animation
 gem 'jquery-peity-rails'
 gem 'zepto-for-rails'
 gem 'icheck-rails'
+# inline charts
+gem 'jquery-sparkline-rails', github: 'cubus/jquery-sparkline-rails'
 gem 'inline_svg'
 
 # CSS
