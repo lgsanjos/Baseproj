@@ -1,8 +1,11 @@
 .content.animate-panel
-  .row
-    = render partial: 'box_index', locals: { index_name: 'Dolar' }
-    = render partial: 'box_index', locals: { index_name: 'IBOV' }
-    = render partial: 'box_index', locals: { index_name: 'Ouro' }
-    = render partial: 'box_index', locals: { index_name: 'Dolar AUS' }
-  .row
-    = render partial: 'box_index', locals: { index_name: 'Euro' }
+  = render_currency_box('Dolar', '2.01%', true, 'USD', '$3,24')
+  = render_currency_box('Dolar AUD', '1.31%', true, 'AUD', '$2,64')
+
+  = render_index_box('IBOV', '1.31%', true, '59.616,40', '1.244,23')
+  = render_index_box('DWJ', '0.31%', false, '23.234', '800.22')
+  = render_index_box('DWJ', '0.31%', false, '23.234', '800.22')
+
+  = render_stock_box('Ações', '0.31%', false, '23.234', '800.22')
+  = render_stock_box('FIIs', '0.31%', true, '23.234', '800.22')
+  = render_stock_box('Dividendos', '0.21%', true, '23.234', '800.22')

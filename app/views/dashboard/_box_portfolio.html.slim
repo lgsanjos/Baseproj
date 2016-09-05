@@ -1,0 +1,60 @@
+.col-lg-6
+  .hpanel.stats
+    .panel-body
+      h5.text-center.text-success
+        i.fa.fa-arrow-up
+        span.p-xs Ações
+      .col-lg-6
+        .flot-chart
+          #flot-pie-chart.flot-chart-content style="height: 62px; width: 180px;" 
+            canvas.flot-base style="direction: ltr;"
+            canvas.flot-overlay style="direction: ltr;"
+      .col-lg-6
+        .stats-title
+          table.table.table-summary
+            tr
+              td
+                strong Valor investido
+              td
+                | R$ 100.243,33
+            tr
+              td
+                strong Valor atual
+              td
+                | R$ 102.400,23
+            tr
+              td
+                strong Valorização
+              td
+               | 4.23 %
+
+javascript:
+  let pieChartData = [
+    { label: "CIEL3 6%",   data: 6,  color: "#A4E585", },
+    { label: "HGTX3 16%",  data: 16, color: "#8DE563", },
+    { label: "ABEV3 22%",  data: 22, color: "#62cb31", },
+    { label: "Outras 24%", data: 24, color: "#368410", },
+  ];
+
+  var pieChartOptions = {
+      series: {
+          pie: {
+              show: true
+          }
+      },
+      grid: {
+          hoverable: true
+      },
+      tooltip: true,
+      tooltipOpts: {
+          content: "%p.0%, %s",
+          shifts: {
+              x: 20,
+              y: 0
+          },
+          defaultTheme: false
+      }
+  };
+
+  $.plot($("#flot-pie-chart"), pieChartData, pieChartOptions);
+

@@ -18,4 +18,7 @@
 //= require zepto
 //= require 'icheck'
 //= require jquery.sparkline
+//= require jquery.flot
+//= require jquery.flot.pie
+//= require jquery.flot.resize
 //= require_tree .

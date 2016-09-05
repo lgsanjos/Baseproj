@@ -109,6 +109,8 @@ GEM
       activesupport (>= 3.0.0)
     ffaker (2.2.0)
     ffi (1.9.14)
+    flot-rails (0.0.7)
+      jquery-rails
     font-awesome-rails (4.6.3.1)
       railties (>= 3.2, < 5.1)
     formatador (0.2.5)
@@ -353,6 +355,7 @@ DEPENDENCIES
   factory_girl
   ffaker
   ffi
+  flot-rails
   font-awesome-rails
   guard-livereload (~> 2.5)
   guard-rails

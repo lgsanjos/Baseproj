@@ -1,17 +1,25 @@
 .col-lg-3
-  .hpanel.stats
+  .hpanel.stats class=(header_color)
     .panel-body
-      h5.text-center.text-success
-        i.fa.fa-arrow-up
-        span.p-xs #{index_name}
+      .row
+        .col-xs-6.text-center
+          h5 #{title}
+        .col-xs-6.text-right class=(is_positive ? 'text-success' : 'text-danger')
+          span
+            i.p-xs.fa class=(is_positive ? 'fa-arrow-up' : 'fa-arrow-down')
+            | #{total_variation}
       .clearfix
       .m-t-xs
-        .row
+        .row.text-center
           .col-xs-6
-            small.stat-label Cotação
+            .stats-title
+              small #{sub_title1}
+            h4 #{value1}
           .col-xs-6
-            h4 $1.170,20
-        .row
+            .stats-title
+              small #{sub_title2}
+            h4 #{value2}
+        .row.m-t-xs.text-center
           .col-xs-12
             .inline-graph
 javascript:

@@ -21,6 +21,8 @@ gem 'zepto-for-rails'
 gem 'icheck-rails'
 # inline charts
 gem 'jquery-sparkline-rails', github: 'cubus/jquery-sparkline-rails'
+# flot chart
+gem "flot-rails"
 gem 'inline_svg'
 
 # CSS
