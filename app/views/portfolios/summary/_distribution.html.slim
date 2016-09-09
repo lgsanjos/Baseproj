@@ -1,0 +1,56 @@
+h4
+  i.fa.fa-heartbeat.p-xs
+  span Distribuição
+div.text-center
+  canvas height="150" width="218" id="distribution_#{portfolio_name}"
+
+
+javascript:
+  var config = {
+      type: 'doughnut',
+      data: {
+
+          datasets: [{
+              data: [
+                  10,
+                  6,
+                  7,
+                  14,
+                  23,
+                  40
+              ],
+              backgroundColor: [
+                  "#F7464A",
+                  "#46BFBD",
+                  "#FDB45C",
+                  "#B7161A",
+                  "#169F9D",
+                  "#BD742C"
+              ],
+          }],
+          labels: [
+              "HGTX3",
+              "PETR4",
+              "CIEL3",
+              "CMIG3",
+              "ZTEC4",
+              "PETR3"
+          ]
+      },
+      options: {
+        animation:{
+          animateScale: true
+        },
+        legend: {
+          position: 'bottom',
+          labels: {
+            boxWidth: 10,
+            usePointStyle: true
+          }
+        },
+        responsive: false
+      }
+  }
+
+  var ctx = document.getElementById("distribution_#{portfolio_name}").getContext("2d");
+  var myNewChart = new Chart(ctx, config)

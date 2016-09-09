@@ -6,10 +6,14 @@
           i.fa.fa-chevron-up
         a.closebox
           i.fa.fa-times
-      | Resumo: #{portfolio_name}
+      strong #{portfolio_name}
+      strong.p-xs -
+      span Última operação: Compra ABEV3 [100]
     .panel-body
       .row
-        .col-md-5
+        .col-md-3
           = render partial: 'portfolios/summary/data', locals: { portfolio_name: portfolio_name }
+        .col-md-3
+          = render partial: 'portfolios/summary/distribution', locals: { portfolio_name: portfolio_name }
         .col-md-6
           = render partial: 'portfolios/summary/chart'

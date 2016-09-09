@@ -21,4 +21,5 @@
 //= require jquery.flot
 //= require jquery.flot.pie
 //= require jquery.flot.resize
+//= require Chart
 //= require_tree .
